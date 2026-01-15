@@ -1,0 +1,154 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+header {
+  background: #004080;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.descripcion {
+  color: #cce7ff;
+  font-size: 18px;
+}
+
+.mision-vision {
+  margin-top: 1rem;
+}
+
+#proyectos {
+  padding: 2rem;
+  background: #e6f2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.proyectos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.proyecto {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.proyecto h3 {
+  color: #004080;
+}
+
+.proyecto img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #004080;
+  border-radius: 5px;
+}
+
+#contacto {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+#contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#contacto input,
+#contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contacto button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background: #0056b3;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .social {
+  margin-bottom: 10px;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 40px;
+  }
+
+  .proyectos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contacto {
+    margin: 1rem;
+    padding: 15px;
+  }
+
+  #contacto input,
+  #contacto textarea,
+  #contacto button {
+    width: 100%;
+  }
+}

@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Actividad1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeoKitchen</title>
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <h1>¡Hola mundo!</h1>
-    <p>Buenas.</p>
+
+  <header>
+    <h1>NeoKitchen</h1>
+    <p class="descripcion">
+      Especialistas en la optimizacion inteligente de espacios y diseno ergonomico.
+    </p>
+    <section class="mision-vision">
+      <h2>Mision</h2>
+      <p>Crear cocinas funcionales y esteticas que mejoren la calidad de vida.</p>
+      <h2>Vision</h2>
+      <p>Ser lideres en diseno ergonomico y optimizacion de espacios a nivel internacional.</p>
+    </section>
+  </header>
+
+  <main>
+    <section id="proyectos">
+      <h2>Proyectos Destacados</h2>
+
+      <div class="proyectos-container">
+        <article class="proyecto">
+          <img src="Cocina1.jpg" alt="Proyecto de cocina iluminada en espacio reducido">
+          <h3>Cocina Compacta</h3>
+          <p>Cocina con buena iluminacion y construida en un reducido espacio.</p>
+        </article>
+
+        <article class="proyecto">
+          <img src="Cocina2.jpg" alt="Proyecto de cocina con madera oscura y marmol">
+          <h3>Cocina Elegante</h3>
+          <p>Cocina con detalles de madera oscura y marmol.</p>
+        </article>
+
+        <article class="proyecto">
+          <img src="Cocina3.jpg" alt="Proyecto de cocina con ventana grande">
+          <h3>Cocina Abierta</h3>
+          <p>Cocina con buena iluminacion y una ventana grande.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contactanos</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+        <label for="correo">Correo electronico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+    </div>
+    <p>&copy; 2026 NeoKitchen. Todos los derechos reservados.</p>
+  </footer>
+
 </body>
 </html>
+
+
+
+
