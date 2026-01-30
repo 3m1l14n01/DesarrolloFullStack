@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de Tareas</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+    }
+    input {
+      width: 70%;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #007BFF;
+      color: white;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #eee;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .actions button {
+      margin-left: 5px;
+      background: #28a745;
+    }
+    .actions button.delete {
+      background: #dc3545;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+    @media (max-width: 600px) {
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestor de Tareas</h1>
+    <div>
+      <input type="text" id="taskInput" placeholder="Escribe una nueva tarea:">
+      <button id="addTaskBtn">Agregar Tarea</button>
+    </div>
+    <p id="errorMsg" class="error"></p>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="JS/app.js"></script>
+</body>
+</html>
+
